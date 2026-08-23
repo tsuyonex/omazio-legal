@@ -1,351 +1,310 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
 <meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Datenschutzerklärung · omazio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #F7F3EC;
     --surface: #FDFAF3;
-    --ink: #2A2521;
-    --muted: #8C837A;
-    --line: #EADFD3;
-    --line-soft: #F1E9DD;
-    --border-card: #EFE7DC;
+    --ink: #2B2621;
+    --muted: #6B6157;
     --accent: #C25742;
-    --accent-deep: #A6402E;
+    --border: #E6DFD3;
+    --maxw: 720px;
   }
-
   * { box-sizing: border-box; }
-
   html { -webkit-text-size-adjust: 100%; }
-
   body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
   }
-
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-  }
-
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 48px 22px 80px; }
   .brand {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 1.25rem;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-    text-transform: lowercase;
-  }
-
-  .brand .dot { color: var(--accent); }
-
-  header {
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 32px;
-    margin-bottom: 44px;
-  }
-
-  h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: clamp(2rem, 6vw, 2.75rem);
-    line-height: 1.1;
+    font-weight: 700;
     letter-spacing: -0.02em;
-    margin: 28px 0 12px;
+    color: var(--accent);
+    font-size: 20px;
+    margin-bottom: 40px;
   }
-
-  .stand {
-    color: var(--muted);
-    font-size: 0.9rem;
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
   }
-
+  .version { color: var(--muted); font-size: 15px; margin-bottom: 32px; }
   h2 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 21px;
     letter-spacing: -0.01em;
-    margin: 52px 0 8px;
+    margin: 40px 0 10px;
+    padding-top: 8px;
   }
-
   h2 .num {
     color: var(--accent);
-    font-weight: 500;
-    margin-right: 12px;
+    font-variant-numeric: tabular-nums;
+    margin-right: 10px;
   }
-
-  h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    margin: 32px 0 6px;
-  }
-
-  p { margin: 0 0 16px; }
-
-  a {
-    color: var(--accent-deep);
-    text-decoration: none;
-    border-bottom: 1px solid var(--line);
-    transition: border-color 0.15s;
-  }
-  a:hover { border-color: var(--accent); }
-
-  ul {
-    margin: 0 0 16px;
-    padding-left: 22px;
-  }
-  li { margin-bottom: 8px; }
-
-  strong { font-weight: 600; }
-
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border-card);
-    border-radius: 16px;
-    padding: 24px 26px;
-    margin: 24px 0;
-    box-shadow: 0 1px 2px rgba(42, 37, 33, 0.03);
-  }
-
-  .placeholder {
-    display: inline-block;
-    background: #FBEDE9;
-    color: var(--accent-deep);
-    border: 1px dashed var(--accent);
-    border-radius: 6px;
-    padding: 1px 8px;
-    font-size: 0.9em;
-    font-weight: 500;
-  }
-
-  .note {
-    font-size: 0.9rem;
-    color: var(--muted);
-    border-left: 3px solid var(--line);
-    padding-left: 16px;
-    margin: 20px 0;
-  }
-
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mail { font-family: inherit; }
+  .meta { font-weight: 600; }
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 16px 0 20px;
-    font-size: 0.95rem;
+    margin: 16px 0;
+    font-size: 15px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
   }
   th, td {
     text-align: left;
     padding: 10px 12px;
-    border-bottom: 1px solid var(--line-soft);
+    border-bottom: 1px solid var(--border);
     vertical-align: top;
   }
-  th {
-    font-weight: 600;
-    color: var(--ink);
-    border-bottom: 1px solid var(--line);
-  }
-
-  footer {
-    margin-top: 64px;
-    padding-top: 28px;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
+  th { background: #F0EADF; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .addr { margin: 8px 0; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 48px 0 24px; }
+  .foot { color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="brand">omazio.</div>
 
-  <header>
-    <div class="brand">omazio<span class="dot">.</span></div>
-    <h1>Datenschutzerklärung</h1>
-    <p class="stand">Version 1.0 · Beta · Stand: Juli 2026</p>
-  </header>
+  <h1>Datenschutzerklärung</h1>
+  <div class="version">Version 1.1 · Beta · Stand: August 2026</div>
 
-  <div class="note">
-    Diese Datenschutzerklärung informiert dich über Art, Umfang und Zweck der Verarbeitung
-    personenbezogener Daten in der App <strong>omazio</strong> (Reiseplanung für Gruppen)
-    gemäß der Datenschutz-Grundverordnung (DSGVO) und dem Bundesdatenschutzgesetz (BDSG).
-  </div>
+  <p>Diese Datenschutzerklärung informiert dich über Art, Umfang und Zweck der
+  Verarbeitung personenbezogener Daten in der App <strong>omazio</strong>
+  (Reiseplanung für Gruppen) gemäß der Datenschutz-Grundverordnung (DSGVO) und
+  dem Bundesdatenschutzgesetz (BDSG).</p>
 
   <h2><span class="num">1</span>Verantwortlicher</h2>
   <p>Verantwortlicher im Sinne der DSGVO ist:</p>
-  <div class="card">
-    <strong>Florian Wimmer</strong><br>
+  <p class="addr">
+    <span class="meta">Florian Wimmer</span><br>
     In der Schacht 8<br>
     84359 Simbach am Inn<br>
-    Deutschland<br><br>
-    E-Mail: <a href="mailto:info@heimly.app">info@heimly.app</a>
-  </div>
-  <p>Diese Datenschutzerklärung gilt für die App <strong>omazio</strong> (iOS &amp; Android) in
-  ihrer aktuellen Beta-Version und wird vor der öffentlichen Veröffentlichung aktualisiert.</p>
+    Deutschland
+  </p>
+  <p>E-Mail: <a class="mail" href="mailto:info@fusionwave.com">info@fusionwave.com</a></p>
+  <p>Diese Datenschutzerklärung gilt für die App <strong>omazio</strong>
+  (iOS &amp; Android) in ihrer aktuellen Beta-Version und wird vor der
+  öffentlichen Veröffentlichung aktualisiert.</p>
 
   <h2><span class="num">2</span>Überblick der Verarbeitungen</h2>
-  <p>Wir verarbeiten personenbezogene Daten, um dir die Kernfunktionen von omazio bereitzustellen:
-  gemeinsame Terminfindung, Ideen-Sammlung mit Abstimmungen, Reiseplanung sowie die Abrechnung
-  gemeinsamer Ausgaben innerhalb einer Reisegruppe. Nachfolgend wird jede Verarbeitung im Detail
-  erläutert.</p>
+  <p>Wir verarbeiten personenbezogene Daten, um dir die Kernfunktionen von omazio
+  bereitzustellen: gemeinsame Terminfindung, Ideen-Sammlung mit Abstimmungen,
+  Reiseplanung sowie die Abrechnung gemeinsamer Ausgaben innerhalb einer
+  Reisegruppe. Nachfolgend wird jede Verarbeitung im Detail erläutert.</p>
 
-  <h2><span class="num">3</span>Konto & Anmeldung</h2>
-  <p>Für die Nutzung von omazio kannst du ein Konto erstellen. Die Authentifizierung erfolgt
-  über unseren Dienstleister <strong>Supabase</strong> (siehe Abschnitt 9).</p>
+  <h2><span class="num">3</span>Konto &amp; Anmeldung</h2>
+  <p>Für die Nutzung von omazio kannst du ein Konto erstellen. Die
+  Authentifizierung erfolgt über unseren Dienstleister <strong>Supabase</strong>
+  (siehe Abschnitt 9).</p>
 
   <h3>Registrierung per E-Mail</h3>
-  <p>Bei der Registrierung mit E-Mail und Passwort verarbeiten wir deine E-Mail-Adresse und
-  ein von dir gewähltes (verschlüsselt gespeichertes) Passwort sowie deinen angegebenen Namen.</p>
+  <p>Bei der Registrierung mit E-Mail und Passwort verarbeiten wir deine
+  E-Mail-Adresse und ein von dir gewähltes (verschlüsselt gespeichertes) Passwort
+  sowie deinen angegebenen Namen.</p>
 
   <h3>Anmeldung mit Apple / Google (Social Login)</h3>
-  <p>Nutzt du „Anmelden mit Apple" oder „Anmelden mit Google", erhalten wir von diesen Anbietern
-  die zur Kontoerstellung notwendigen Daten (z. B. Name und E-Mail-Adresse bzw. eine anonymisierte
-  Weiterleitungs-Adresse bei Apple). Die Anmeldung bei Apple/Google unterliegt deren jeweiliger
-  Datenschutzerklärung.</p>
+  <p>Nutzt du „Anmelden mit Apple" oder „Anmelden mit Google", erhalten wir von
+  diesen Anbietern die zur Kontoerstellung notwendigen Daten (z.&nbsp;B. Name und
+  E-Mail-Adresse bzw. eine anonymisierte Weiterleitungs-Adresse bei Apple). Die
+  Anmeldung bei Apple/Google unterliegt deren jeweiliger Datenschutzerklärung.</p>
 
   <h3>Beitritt ohne Konto</h3>
-  <p>Du kannst einer Reise auch ohne vollständige Registrierung beitreten. Dabei wird im
-  Hintergrund eine anonyme Identität erzeugt, die technisch mit einem Konto vergleichbar ist,
-  jedoch zunächst keine E-Mail-Adresse enthält. Du kannst diese anonyme Identität später zu
-  einem vollwertigen Konto erweitern.</p>
+  <p>Du kannst einer Reise auch ohne vollständige Registrierung beitreten. Dabei
+  wird im Hintergrund eine anonyme Identität erzeugt, die technisch mit einem
+  Konto vergleichbar ist, jedoch zunächst keine E-Mail-Adresse enthält. Du kannst
+  diese anonyme Identität später zu einem vollwertigen Konto erweitern.</p>
 
-  <p><strong>Zweck:</strong> Bereitstellung eines Nutzerkontos, Zuordnung deiner Inhalte,
-  Zugriffssteuerung innerhalb der App.<br>
-  <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung / Nutzung der App).</p>
+  <p><span class="meta">Zweck:</span> Bereitstellung eines Nutzerkontos,
+  Zuordnung deiner Inhalte, Zugriffssteuerung innerhalb der App.<br>
+  <span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b
+  DSGVO (Vertragserfüllung / Nutzung der App).</p>
 
   <h2><span class="num">4</span>Nutzungsdaten innerhalb der App</h2>
-  <p>Bei der Nutzung von omazio verarbeiten wir die Inhalte, die du und deine Reisegruppe erstellen:</p>
+  <p>Bei der Nutzung von omazio verarbeiten wir die Inhalte, die du und deine
+  Reisegruppe erstellen:</p>
   <ul>
-    <li><strong>Reisedaten:</strong> Reisename, Ziel, Zeiträume, Etappen und Tagesplanung.</li>
+    <li><strong>Reisedaten:</strong> Reisename, Ziel, Zeiträume, Etappen und
+    Tagesplanung.</li>
     <li><strong>Terminfindung:</strong> deine angegebenen Verfügbarkeiten.</li>
-    <li><strong>Ideen & Abstimmungen:</strong> von dir eingebrachte Vorschläge und deine Stimmen.</li>
-    <li><strong>Ausgaben & Abrechnung:</strong> von dir erfasste Beträge, Zahler, Aufteilung und
-      daraus berechnete Ausgleichszahlungen zwischen Gruppenmitgliedern.</li>
-    <li><strong>Listen & Dokumente:</strong> Pack-, Einkaufs- und To-do-Listen sowie hochgeladene
-      Dateien und Bilder.</li>
-    <li><strong>Standortbezogene Angaben:</strong> Adressen und Orte, die du im Reiseplan hinterlegst
-      (keine kontinuierliche GPS-Standortverfolgung).</li>
+    <li><strong>Ideen &amp; Abstimmungen:</strong> von dir eingebrachte
+    Vorschläge und deine Stimmen.</li>
+    <li><strong>Flüge:</strong> von dir erfasste Flugdaten (Ab- und Ankunftsort,
+    Flughäfen, Zeiten, Fluggesellschaft) sowie – bei übernommenen Flügen – die
+    Zuordnung mitreisender Gruppenmitglieder und deren Sitzplätze.</li>
+    <li><strong>Ausgaben &amp; Abrechnung:</strong> von dir erfasste Beträge,
+    Zahler, Aufteilung und daraus berechnete Ausgleichszahlungen zwischen
+    Gruppenmitgliedern.</li>
+    <li><strong>Listen &amp; Dokumente:</strong> Pack-, Einkaufs- und To-do-Listen
+    sowie hochgeladene Dateien und Bilder.</li>
+    <li><strong>Standortbezogene Angaben:</strong> Adressen, Orte und Koordinaten,
+    die du im Reiseplan hinterlegst (keine kontinuierliche
+    GPS-Standortverfolgung).</li>
   </ul>
-  <p>Diese Inhalte sind für die anderen bestätigten Mitglieder derselben Reise sichtbar – das ist
-  Kernzweck einer gemeinsamen Reiseplanung.</p>
-  <p><strong>Zweck:</strong> Bereitstellung der App-Funktionen.<br>
-  <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+  <p>Diese Inhalte sind für die anderen bestätigten Mitglieder derselben Reise
+  sichtbar – das ist Kernzweck einer gemeinsamen Reiseplanung.</p>
+  <p><span class="meta">Zweck:</span> Bereitstellung der App-Funktionen.<br>
+  <span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b
+  DSGVO.</p>
 
   <h2><span class="num">5</span>Push-Benachrichtigungen</h2>
-  <p>Wenn du zustimmst, senden wir Push-Benachrichtigungen (z. B. zu neuen Abstimmungen oder
-  offenen Zahlungen). Hierzu wird ein anonymer Geräte-Token verarbeitet. Du kannst Push-Mitteilungen
-  jederzeit in den Geräteeinstellungen deaktivieren.</p>
-  <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).</p>
+  <p>Wenn du zustimmst, senden wir Push-Benachrichtigungen (z.&nbsp;B. zu neuen
+  Abstimmungen oder offenen Zahlungen). Hierzu wird ein anonymer Geräte-Token
+  verarbeitet. Du kannst Push-Mitteilungen jederzeit in den Geräteeinstellungen
+  deaktivieren.</p>
+  <p><span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1
+  lit.&nbsp;a DSGVO (Einwilligung).</p>
 
   <h2><span class="num">6</span>E-Mail-Versand</h2>
   <h3>Transaktions-E-Mails</h3>
-  <p>Wir versenden funktionale E-Mails (z. B. zur Bestätigung deiner Adresse, Passwort-Zurücksetzung
-  oder Einladungen). Der Versand erfolgt über Supabase Auth in Verbindung mit
-  Microsoft 365 SMTP über die Adresse info@heimly.app. Dabei wird deine E-Mail-Adresse verarbeitet.</p>
-  <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+  <p>Wir versenden funktionale E-Mails (z.&nbsp;B. zur Bestätigung deiner Adresse,
+  Passwort-Zurücksetzung oder Einladungen). Der Versand erfolgt über Supabase Auth
+  in Verbindung mit Microsoft&nbsp;365 SMTP. Dabei wird deine E-Mail-Adresse
+  verarbeitet.</p>
+  <p><span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1
+  lit.&nbsp;b DSGVO.</p>
 
   <h3>Marketing-E-Mails (optional)</h3>
-  <p>Sofern du eingewilligt hast, senden wir dir gelegentlich Hinweise zu neuen Funktionen. Du kannst
-  dich jederzeit über den Abmeldelink in jeder E-Mail abmelden.</p>
-  <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).</p>
+  <p>Sofern du eingewilligt hast, senden wir dir gelegentlich Hinweise zu neuen
+  Funktionen. Du kannst dich jederzeit über den Abmeldelink in jeder E-Mail
+  abmelden.</p>
+  <p><span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1
+  lit.&nbsp;a DSGVO (Einwilligung).</p>
 
   <h2><span class="num">7</span>Wechselkurse (externer Dienst)</h2>
-  <p>Zur Umrechnung von Ausgaben in Fremdwährungen rufen wir aktuelle Wechselkurse der
-  Europäischen Zentralbank (EZB) ab. Dabei werden keine personenbezogenen Daten an den
-  Kursanbieter übermittelt.</p>
+  <p>Zur Umrechnung von Ausgaben in Fremdwährungen rufen wir aktuelle
+  Wechselkurse der Europäischen Zentralbank (EZB) ab. Dabei werden keine
+  personenbezogenen Daten an den Kursanbieter übermittelt.</p>
 
-  <h2><span class="num">8</span>Server-Logdaten</h2>
-  <p>Beim technischen Betrieb fallen automatisch Protokolldaten an (z. B. IP-Adresse, Zeitpunkt der
-  Anfrage, Fehlermeldungen). Diese dienen der Sicherheit, Stabilität und Fehleranalyse und werden
-  regelmäßig gelöscht.</p>
-  <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb).</p>
+  <h2><span class="num">8</span>Ortssuche, Zeitzonen &amp; Flughafendaten</h2>
+  <p>Zur Planung deiner Reise nutzt omazio verschiedene orts- und
+  zeitzonenbezogene Funktionen:</p>
+  <ul>
+    <li><strong>Ortssuche (Geocoding):</strong> Wenn du nach einem Ort, einer
+    Adresse oder einem Flughafen suchst, kann deine Sucheingabe an den externen
+    Geocoding-Dienst <strong>Photon</strong> (betrieben von Komoot GmbH,
+    Datenbasis OpenStreetMap) übermittelt werden, um passende Treffer
+    anzuzeigen.</li>
+    <li><strong>Zeitzonen:</strong> Zur korrekten Anzeige von Ab- und
+    Ankunftszeiten kann eine Ortsangabe bzw. deren Koordinaten an den Dienst
+    <strong>Open-Meteo</strong> übermittelt werden, um die zugehörige Zeitzone zu
+    bestimmen.</li>
+    <li><strong>Flughafendaten:</strong> Für die Flughafensuche verwenden wir
+    einen lokal in der App gespeicherten Datensatz von
+    <strong>OpenFlights</strong> (lizenziert unter der Open Database License,
+    ODbL). Diese Suche erfolgt auf deinem Gerät, ohne Datenübermittlung an Dritte.
+    Findet die lokale Suche keinen Treffer, kann ergänzend die oben genannte
+    Ortssuche (Photon) verwendet werden.</li>
+    <li><strong>Kartennavigation:</strong> Wenn du die Funktion „Route öffnen"
+    nutzt, öffnet omazio den gewählten Ort in einer externen Karten-App
+    (z.&nbsp;B. Apple&nbsp;Karten oder Google&nbsp;Maps). Dabei werden die
+    Zieldaten an den jeweiligen Karten-Anbieter übergeben; dessen Nutzung
+    unterliegt der Datenschutzerklärung des Anbieters.</li>
+  </ul>
+  <p>Bei den genannten Abrufen wird lediglich deine jeweilige Such- bzw.
+  Ortsangabe übermittelt, keine Kontodaten. Technisch bedingt kann der jeweilige
+  Dienst dabei deine IP-Adresse verarbeiten.</p>
+  <p><span class="meta">Zweck:</span> Bereitstellung der Orts-, Flug- und
+  Kartenfunktionen.<br>
+  <span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b
+  DSGVO (Nutzung der App) bzw. Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO
+  (berechtigtes Interesse an funktionsfähiger Orts- und Kartendarstellung).</p>
 
-  <h2><span class="num">9</span>Auftragsverarbeiter & Hosting</h2>
-  <p>Zur Bereitstellung der App setzen wir sorgfältig ausgewählte Dienstleister ein, mit denen
-  Auftragsverarbeitungsverträge (Art. 28 DSGVO) bestehen:</p>
+  <h2><span class="num">9</span>Server-Logdaten</h2>
+  <p>Beim technischen Betrieb fallen automatisch Protokolldaten an (z.&nbsp;B.
+  IP-Adresse, Zeitpunkt der Anfrage, Fehlermeldungen). Diese dienen der
+  Sicherheit, Stabilität und Fehleranalyse und werden regelmäßig gelöscht.</p>
+  <p><span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1
+  lit.&nbsp;f DSGVO (berechtigtes Interesse am sicheren Betrieb).</p>
+
+  <h2><span class="num">10</span>Auftragsverarbeiter &amp; Hosting</h2>
+  <p>Zur Bereitstellung der App setzen wir sorgfältig ausgewählte Dienstleister
+  ein. Soweit erforderlich bestehen Auftragsverarbeitungsverträge (Art.&nbsp;28
+  DSGVO):</p>
   <table>
     <thead>
       <tr><th>Dienstleister</th><th>Zweck</th><th>Ort der Verarbeitung</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Supabase</td>
-        <td>Hosting, Datenbank, Authentifizierung, Datei-Speicher</td>
-        <td>EU (Frankfurt)</td>
-      </tr>
-      <tr>
-        <td>Expo (Expo Inc.)</td>
-        <td>Zustellung von Push-Benachrichtigungen</td>
-        <td>USA</td>
-      </tr>
-      <tr>
-        <td>Microsoft 365</td>
-        <td>Versand von Transaktions-E-Mails (SMTP)</td>
-        <td>EU / USA</td>
-      </tr>
-      <tr>
-        <td>Apple / Google</td>
-        <td>App-Auslieferung, optionaler Login</td>
-        <td>EU / USA</td>
-      </tr>
+      <tr><td>Supabase</td><td>Hosting, Datenbank, Authentifizierung, Datei-Speicher</td><td>EU (Frankfurt)</td></tr>
+      <tr><td>Expo (Expo Inc.)</td><td>Zustellung von Push-Benachrichtigungen</td><td>USA</td></tr>
+      <tr><td>Microsoft 365</td><td>Versand von Transaktions-E-Mails (SMTP)</td><td>EU / USA</td></tr>
+      <tr><td>Komoot (Photon)</td><td>Ortssuche / Geocoding</td><td>EU</td></tr>
+      <tr><td>Open-Meteo</td><td>Bestimmung von Zeitzonen</td><td>EU</td></tr>
+      <tr><td>Apple / Google</td><td>App-Auslieferung, optionaler Login, Kartennavigation</td><td>EU / USA</td></tr>
     </tbody>
   </table>
-  <p class="note">
-    Sofern Daten in Drittländer (z. B. USA) übermittelt werden, erfolgt dies auf Grundlage
-    geeigneter Garantien (z. B. EU-Standardvertragsklauseln oder EU-US Data Privacy Framework).
-  </p>
+  <p>Sofern Daten in Drittländer (z.&nbsp;B. USA) übermittelt werden, erfolgt dies
+  auf Grundlage geeigneter Garantien (z.&nbsp;B. EU-Standardvertragsklauseln oder
+  EU-US Data Privacy Framework).</p>
 
-  <h2><span class="num">10</span>Speicherdauer</h2>
-  <p>Wir speichern deine Daten, solange dein Konto besteht bzw. solange es für die genannten Zwecke
-  erforderlich ist. Bei Löschung deines Kontos werden deine personenbezogenen Daten gelöscht oder
-  anonymisiert. Inhalte, die für die gemeinsame Abrechnung einer Reise erforderlich sind, können
-  in anonymisierter Form bei der Gruppe verbleiben, damit die Abrechnung der übrigen Mitglieder
+  <h2><span class="num">11</span>Speicherdauer</h2>
+  <p>Wir speichern deine Daten, solange dein Konto besteht bzw. solange es für die
+  genannten Zwecke erforderlich ist. Bei Löschung deines Kontos werden deine
+  personenbezogenen Daten gelöscht oder anonymisiert. Inhalte, die für die
+  gemeinsame Abrechnung einer Reise erforderlich sind, können in anonymisierter
+  Form bei der Gruppe verbleiben, damit die Abrechnung der übrigen Mitglieder
   nicht verfälscht wird. Gesetzliche Aufbewahrungsfristen bleiben unberührt.</p>
 
-  <h2><span class="num">11</span>Deine Rechte</h2>
+  <h2><span class="num">12</span>Deine Rechte</h2>
   <p>Dir stehen nach der DSGVO folgende Rechte zu:</p>
   <ul>
-    <li>Auskunft über deine gespeicherten Daten (Art. 15) – in der App zusätzlich als Datenexport verfügbar.</li>
-    <li>Berichtigung unrichtiger Daten (Art. 16).</li>
-    <li>Löschung (Art. 17) – in der App als Konto-Löschung verfügbar.</li>
-    <li>Einschränkung der Verarbeitung (Art. 18).</li>
-    <li>Datenübertragbarkeit (Art. 20).</li>
-    <li>Widerspruch gegen Verarbeitungen auf Basis berechtigter Interessen (Art. 21).</li>
-    <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3).</li>
+    <li>Auskunft über deine gespeicherten Daten (Art.&nbsp;15) – in der App
+    zusätzlich als Datenexport verfügbar.</li>
+    <li>Berichtigung unrichtiger Daten (Art.&nbsp;16).</li>
+    <li>Löschung (Art.&nbsp;17) – in der App als Konto-Löschung verfügbar.</li>
+    <li>Einschränkung der Verarbeitung (Art.&nbsp;18).</li>
+    <li>Datenübertragbarkeit (Art.&nbsp;20).</li>
+    <li>Widerspruch gegen Verarbeitungen auf Basis berechtigter Interessen
+    (Art.&nbsp;21).</li>
+    <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft
+    (Art.&nbsp;7 Abs.&nbsp;3).</li>
   </ul>
-  <p>Zur Ausübung genügt eine Nachricht an <a href="mailto:info@heimly.app">info@heimly.app</a>.</p>
+  <p>Zur Ausübung genügt eine Nachricht an
+  <a class="mail" href="mailto:info@fusionwave.com">info@fusionwave.com</a>.</p>
 
-  <h2><span class="num">12</span>Beschwerderecht</h2>
-  <p>Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in
-  dem Mitgliedstaat deines Aufenthaltsorts. Für den Verantwortlichen zuständig ist in Bayern das
-  <a href="https://www.lda.bayern.de" target="_blank" rel="noopener">Bayerische Landesamt für
+  <h2><span class="num">13</span>Beschwerderecht</h2>
+  <p>Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren,
+  insbesondere in dem Mitgliedstaat deines Aufenthaltsorts. Für den
+  Verantwortlichen zuständig ist in Bayern das
+  <a href="https://www.lda.bayern.de">Bayerische Landesamt für
   Datenschutzaufsicht (BayLDA)</a>.</p>
 
-  <h2><span class="num">13</span>Kinder</h2>
-  <p>omazio ist nicht für die eigenständige Nutzung durch Kinder unter 16 Jahren konzipiert.
-  Im Familien-Modus können Profile für Kinder ausschließlich durch ein erziehungsberechtigtes
-  Familienmitglied angelegt und verwaltet werden. Für einen eigenen App-Zugang eines Minderjährigen
-  liegt die Verantwortung bei den Erziehungsberechtigten.</p>
+  <h2><span class="num">14</span>Kinder</h2>
+  <p>omazio ist nicht für die eigenständige Nutzung durch Kinder unter 16 Jahren
+  konzipiert. Im Familien-Modus können Profile für Kinder ausschließlich durch ein
+  erziehungsberechtigtes Familienmitglied angelegt und verwaltet werden. Für einen
+  eigenen App-Zugang eines Minderjährigen liegt die Verantwortung bei den
+  Erziehungsberechtigten.</p>
 
-  <h2><span class="num">14</span>Änderungen dieser Erklärung</h2>
-  <p>Wir passen diese Datenschutzerklärung an, wenn sich die Rechtslage oder unsere Verarbeitung
-  ändert. Es gilt die jeweils aktuelle, hier veröffentlichte Fassung.</p>
+  <h2><span class="num">15</span>Änderungen dieser Erklärung</h2>
+  <p>Wir passen diese Datenschutzerklärung an, wenn sich die Rechtslage oder unsere
+  Verarbeitung ändert. Es gilt die jeweils aktuelle, hier veröffentlichte
+  Fassung.</p>
 
-  <footer>
-    omazio · Datenschutzerklärung · Version 1.0 Beta · Juli 2026<br>
-    © 2026 Florian Wimmer · <a href="mailto:info@heimly.app">info@heimly.app</a>
-  </footer>
-
+  <hr>
+  <p class="foot">omazio · Datenschutzerklärung · Version 1.1 Beta · August 2026<br>
+  © 2026 Florian Wimmer · <a class="mail" href="mailto:info@fusionwave.com">info@fusionwave.com</a></p>
 </div>
 </body>
 </html>
