@@ -87,7 +87,7 @@
   <div class="brand">omazio.</div>
 
   <h1>Datenschutzerklärung</h1>
-  <div class="version">Version 1.1 · Beta · Stand: August 2026</div>
+  <div class="version">Version 1.2 · Beta · Stand: Oktober 2026</div>
 
   <p>Diese Datenschutzerklärung informiert dich über Art, Umfang und Zweck der
   Verarbeitung personenbezogener Daten in der App <strong>omazio</strong>
@@ -116,7 +116,7 @@
   <h2><span class="num">3</span>Konto &amp; Anmeldung</h2>
   <p>Für die Nutzung von omazio kannst du ein Konto erstellen. Die
   Authentifizierung erfolgt über unseren Dienstleister <strong>Supabase</strong>
-  (siehe Abschnitt 9).</p>
+  (siehe Abschnitt&nbsp;11).</p>
 
   <h3>Registrierung per E-Mail</h3>
   <p>Bei der Registrierung mit E-Mail und Passwort verarbeiten wir deine
@@ -156,13 +156,25 @@
     Zahler, Aufteilung und daraus berechnete Ausgleichszahlungen zwischen
     Gruppenmitgliedern.</li>
     <li><strong>Listen &amp; Dokumente:</strong> Pack-, Einkaufs- und To-do-Listen
-    sowie hochgeladene Dateien und Bilder.</li>
+    sowie hochgeladene Dateien und Bilder (z.&nbsp;B. Tickets, Buchungsbestätigungen),
+    auch wenn sie mit einem Programmpunkt verknüpft sind.</li>
+    <li><strong>Pinnwand:</strong> Beiträge, Kommentare und geteilte Links.</li>
     <li><strong>Standortbezogene Angaben:</strong> Adressen, Orte und Koordinaten,
     die du im Reiseplan hinterlegst (keine kontinuierliche
     GPS-Standortverfolgung).</li>
   </ul>
   <p>Diese Inhalte sind für die anderen bestätigten Mitglieder derselben Reise
   sichtbar – das ist Kernzweck einer gemeinsamen Reiseplanung.</p>
+  <h3>Kamera- und Fotozugriff</h3>
+  <p>omazio greift nur nach deiner Freigabe in den Systemeinstellungen und nur
+  in dem Moment, in dem du die jeweilige Funktion nutzt, auf Kamera bzw.
+  Fotomediathek zu: zum Scannen von Einladungs-QR-Codes, zum Fotografieren
+  oder Auswählen von Reiseunterlagen sowie zum Setzen eigener Bilder für
+  Etappen und Ideen. Beim QR-Scan wird kein Bild gespeichert. Fotos, die du
+  hochlädst, werden (verkleinert, als JPEG) im Datei-Speicher der Reise
+  abgelegt und sind für die Mitglieder dieser Reise sichtbar. Einen
+  Hintergrundzugriff auf deine Fotos gibt es nicht. Du kannst die Freigaben
+  jederzeit in den Geräteeinstellungen widerrufen.</p>
   <p><span class="meta">Zweck:</span> Bereitstellung der App-Funktionen.<br>
   <span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b
   DSGVO.</p>
@@ -179,8 +191,8 @@
   <h3>Transaktions-E-Mails</h3>
   <p>Wir versenden funktionale E-Mails (z.&nbsp;B. zur Bestätigung deiner Adresse,
   Passwort-Zurücksetzung oder Einladungen). Der Versand erfolgt über Supabase Auth
-  in Verbindung mit Microsoft&nbsp;365 SMTP. Dabei wird deine E-Mail-Adresse
-  verarbeitet.</p>
+  über den Mailserver unseres Hosters ALL-INKL.COM (Absender
+  hallo@omazio.app). Dabei wird deine E-Mail-Adresse verarbeitet.</p>
   <p><span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1
   lit.&nbsp;b DSGVO.</p>
 
@@ -205,9 +217,10 @@
     Geocoding-Dienst <strong>Photon</strong> (betrieben von Komoot GmbH,
     Datenbasis OpenStreetMap) übermittelt werden, um passende Treffer
     anzuzeigen.</li>
-    <li><strong>Zeitzonen:</strong> Zur korrekten Anzeige von Ab- und
-    Ankunftszeiten kann eine Ortsangabe bzw. deren Koordinaten an den Dienst
-    <strong>Open-Meteo</strong> übermittelt werden, um die zugehörige Zeitzone zu
+    <li><strong>Zeitzonen &amp; Wetter:</strong> Zur korrekten Anzeige von Ab- und
+    Ankunftszeiten sowie für die Wettervorschau am Reiseziel können
+    Koordinaten eines Ortes an den Dienst <strong>Open-Meteo</strong>
+    übermittelt werden, um die zugehörige Zeitzone bzw. Wetterdaten zu
     bestimmen.</li>
     <li><strong>Flughafendaten:</strong> Für die Flughafensuche verwenden wir
     einen lokal in der App gespeicherten Datensatz von
@@ -230,14 +243,39 @@
   DSGVO (Nutzung der App) bzw. Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO
   (berechtigtes Interesse an funktionsfähiger Orts- und Kartendarstellung).</p>
 
-  <h2><span class="num">9</span>Server-Logdaten</h2>
+  <h2><span class="num">9</span>Eingebettete Videos, Etappenbilder &amp; Einladungsseite</h2>
+  <h3>Videos auf der Pinnwand</h3>
+  <p>Teilt jemand auf der Pinnwand einen Link zu YouTube, TikTok oder Instagram,
+  zeigt omazio zunächst nur ein Vorschaubild. Für YouTube-Links wird dieses
+  Vorschaubild von YouTube (Google Ireland Ltd.) geladen. Erst wenn du ein
+  Video aktiv antippst, wird der Player des jeweiligen Anbieters geladen –
+  bei YouTube im erweiterten Datenschutzmodus (youtube-nocookie.com). Dabei
+  erhält der Anbieter technisch bedingt deine IP-Adresse und Geräteinformationen
+  und kann eigene Cookies bzw. ähnliche Technologien einsetzen. Es gelten die
+  Datenschutzbestimmungen von Google/YouTube, TikTok (TikTok Technology Ltd.)
+  bzw. Instagram (Meta Platforms Ireland Ltd.).</p>
+  <p><span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1
+  lit.&nbsp;a DSGVO (Einwilligung durch aktives Starten des Videos).</p>
+  <h3>Etappenbilder</h3>
+  <p>Für Etappen ohne eigenes Bild sucht unser Server anhand des Ortsnamens ein
+  passendes Bild bei <strong>Pixabay</strong> und speichert es in unserem
+  Datei-Speicher. Dabei wird nur der Ortsname übermittelt, keine Daten über
+  dich; dein Gerät lädt das Bild ausschließlich von unserem Speicher.</p>
+  <h3>Einladungsseite omazio.app</h3>
+  <p>Einladungslinks führen auf omazio.app. Ist die App installiert, öffnet
+  sich direkt die App; andernfalls zeigt eine einfache Seite den
+  Einladungscode an. Die Seite wird bei ALL-INKL.COM gehostet und setzt keine
+  Cookies; der Hoster verarbeitet technisch bedingt Server-Logdaten
+  (siehe Abschnitt&nbsp;10).</p>
+
+  <h2><span class="num">10</span>Server-Logdaten</h2>
   <p>Beim technischen Betrieb fallen automatisch Protokolldaten an (z.&nbsp;B.
   IP-Adresse, Zeitpunkt der Anfrage, Fehlermeldungen). Diese dienen der
   Sicherheit, Stabilität und Fehleranalyse und werden regelmäßig gelöscht.</p>
   <p><span class="meta">Rechtsgrundlage:</span> Art.&nbsp;6 Abs.&nbsp;1
   lit.&nbsp;f DSGVO (berechtigtes Interesse am sicheren Betrieb).</p>
 
-  <h2><span class="num">10</span>Auftragsverarbeiter &amp; Hosting</h2>
+  <h2><span class="num">11</span>Auftragsverarbeiter &amp; Hosting</h2>
   <p>Zur Bereitstellung der App setzen wir sorgfältig ausgewählte Dienstleister
   ein. Soweit erforderlich bestehen Auftragsverarbeitungsverträge (Art.&nbsp;28
   DSGVO):</p>
@@ -248,9 +286,10 @@
     <tbody>
       <tr><td>Supabase</td><td>Hosting, Datenbank, Authentifizierung, Datei-Speicher</td><td>EU (Frankfurt)</td></tr>
       <tr><td>Expo (Expo Inc.)</td><td>Zustellung von Push-Benachrichtigungen</td><td>USA</td></tr>
-      <tr><td>Microsoft 365</td><td>Versand von Transaktions-E-Mails (SMTP)</td><td>EU / USA</td></tr>
+      <tr><td>ALL-INKL.COM – Neue Medien Münnich</td><td>Versand von Transaktions-E-Mails, Hosting der Einladungsseite omazio.app</td><td>Deutschland</td></tr>
       <tr><td>Komoot (Photon)</td><td>Ortssuche / Geocoding</td><td>EU</td></tr>
-      <tr><td>Open-Meteo</td><td>Bestimmung von Zeitzonen</td><td>EU</td></tr>
+      <tr><td>Open-Meteo</td><td>Bestimmung von Zeitzonen, Wettervorschau</td><td>EU</td></tr>
+      <tr><td>Pixabay</td><td>Etappenbilder (nur Ortsname, serverseitig)</td><td>EU (Deutschland)</td></tr>
       <tr><td>Apple / Google</td><td>App-Auslieferung, optionaler Login, Kartennavigation</td><td>EU / USA</td></tr>
     </tbody>
   </table>
@@ -258,7 +297,7 @@
   auf Grundlage geeigneter Garantien (z.&nbsp;B. EU-Standardvertragsklauseln oder
   EU-US Data Privacy Framework).</p>
 
-  <h2><span class="num">11</span>Speicherdauer</h2>
+  <h2><span class="num">12</span>Speicherdauer</h2>
   <p>Wir speichern deine Daten, solange dein Konto besteht bzw. solange es für die
   genannten Zwecke erforderlich ist. Bei Löschung deines Kontos werden deine
   personenbezogenen Daten gelöscht oder anonymisiert. Inhalte, die für die
@@ -266,7 +305,7 @@
   Form bei der Gruppe verbleiben, damit die Abrechnung der übrigen Mitglieder
   nicht verfälscht wird. Gesetzliche Aufbewahrungsfristen bleiben unberührt.</p>
 
-  <h2><span class="num">12</span>Deine Rechte</h2>
+  <h2><span class="num">13</span>Deine Rechte</h2>
   <p>Dir stehen nach der DSGVO folgende Rechte zu:</p>
   <ul>
     <li>Auskunft über deine gespeicherten Daten (Art.&nbsp;15) – in der App
@@ -283,27 +322,27 @@
   <p>Zur Ausübung genügt eine Nachricht an
   <a class="mail" href="mailto:info@fusionwave.com">info@fusionwave.com</a>.</p>
 
-  <h2><span class="num">13</span>Beschwerderecht</h2>
+  <h2><span class="num">14</span>Beschwerderecht</h2>
   <p>Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren,
   insbesondere in dem Mitgliedstaat deines Aufenthaltsorts. Für den
   Verantwortlichen zuständig ist in Bayern das
   <a href="https://www.lda.bayern.de">Bayerische Landesamt für
   Datenschutzaufsicht (BayLDA)</a>.</p>
 
-  <h2><span class="num">14</span>Kinder</h2>
+  <h2><span class="num">15</span>Kinder</h2>
   <p>omazio ist nicht für die eigenständige Nutzung durch Kinder unter 16 Jahren
   konzipiert. Im Familien-Modus können Profile für Kinder ausschließlich durch ein
   erziehungsberechtigtes Familienmitglied angelegt und verwaltet werden. Für einen
   eigenen App-Zugang eines Minderjährigen liegt die Verantwortung bei den
   Erziehungsberechtigten.</p>
 
-  <h2><span class="num">15</span>Änderungen dieser Erklärung</h2>
+  <h2><span class="num">16</span>Änderungen dieser Erklärung</h2>
   <p>Wir passen diese Datenschutzerklärung an, wenn sich die Rechtslage oder unsere
   Verarbeitung ändert. Es gilt die jeweils aktuelle, hier veröffentlichte
   Fassung.</p>
 
   <hr>
-  <p class="foot">omazio · Datenschutzerklärung · Version 1.1 Beta · August 2026<br>
+  <p class="foot">omazio · Datenschutzerklärung · Version 1.2 Beta · Oktober 2026<br>
   © 2026 Florian Wimmer · <a class="mail" href="mailto:info@fusionwave.com">info@fusionwave.com</a></p>
 </div>
 </body>
